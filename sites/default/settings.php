@@ -89,7 +89,16 @@
  * @endcode
  */
 $databases = [];
-
+$databases['default']['default'] = [
+    'database' => 'sainetwo_sainetwork',
+    'username' => 'sainetwo_root',
+    'password' => 'Sainetwork.123',
+    'host' => 'localhost',
+    'port' => '3306',
+    'driver' => 'mysql',
+    'prefix' => '',
+    'collation' => 'utf8mb4_general_ci',
+  ];
 /**
  * Customizing database settings.
  *
@@ -266,7 +275,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'ImpIG-bF2WmvfQ9f9rglDpQbMWHP2ajxOVhLX4j7zsWTrEoEo3cDa9S3s9x1djz1estGJNq42g';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -755,14 +764,3 @@ $settings['entity_update_backup'] = TRUE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'sainetwork',
-  'username' => 'root',
-  'password' => '',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_edDj16qFc-xJ8HsudJJp5NT2YyTTpTRN2loocRHCY2G6S9bEwiYi9zuUimQQ_CgtpoEeSNg-2A/sync';
