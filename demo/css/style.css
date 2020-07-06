@@ -244,7 +244,7 @@ body {
 
 .primary-bg { background-color: #60c2a4; }
 .secondary-bg { background-color: #605cb8; }
-.light-bg { background-color: #f9fdfc; }
+.light-bg { background-color: #f4f7fb; }
 .dark-bg { background-color: #202e39; }
 
 .rubik { font-family: 'Rubik', sans-serif; }
@@ -1030,6 +1030,7 @@ label input[type=radio] {
     margin-bottom: 30px;
     -webkit-transition: all .2s;
     transition: all .2s;
+	padding-left: 30px;
 }
 .single-service:hover {
     border: 1px solid #605cb8;
@@ -1065,7 +1066,8 @@ label input[type=radio] {
 .single-service-white h4,
 .single-service-white a,
 .single-service-white a:hover {
-    color: #fff;
+    color: #000000;
+    background-color: #fff;
 }
 
 .service-details h2 {
